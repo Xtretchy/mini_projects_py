@@ -1,4 +1,4 @@
-# Python program to convert a number in base 10 to any base and vice-versa
+# Python program to convert a number between two bases
 
 # function to convert base 10 to other bases
 def conv_to_other_b(orig_num, conv_base):
@@ -43,7 +43,7 @@ if orig_base != 10 and conv_base == 10: # conversion from other bases to base 10
     conv_num = conv_to_b_10(orig_num, orig_base)
 elif orig_base == 10 and conv_base != 10: # conversion from base 10 to other bases
     conv_num = conv_to_other_b(orig_num, conv_base)
-else: # conversion between any other two bases i.e first to 10, then to that desired base
+else: # conversion between any other two bases i.e convert first to base 10, then to desired base
     conv_num = conv_to_b_10(orig_num, orig_base)
     conv_num = conv_to_other_b(conv_num, conv_base)
 
